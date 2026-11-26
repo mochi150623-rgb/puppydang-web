@@ -526,7 +526,7 @@
     }
     var html = '';
     rows.forEach(function (r) {
-      var isStatic = !!POSTS[r.slug] && POSTS[r.slug].isStatic;
+      var isStatic = !!staticDefaults[r.slug];
       html += '<li><span><b>' + esc(r.title || r.slug) + '</b>' +
         (r.hidden ? ' <span style="color:#c05a5a;font-size:12px">(숨김)</span>' : '') +
         '<br><small style="color:#98a19c">' + esc(r.slug) + (isStatic ? ' · 기본 글' : ' · 새 글') + '</small></span>' +
