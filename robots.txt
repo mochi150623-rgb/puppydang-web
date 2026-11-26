@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mochi150623-rgb.github.io/puppydang-web/sitemap.xml
