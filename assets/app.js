@@ -135,9 +135,9 @@
     el.innerHTML =
       '<a class="card-thumb" href="#' + esc(row.slug) + '" data-open="' + esc(row.slug) + '">' +
         '<img src="' + esc(thumbSrc(row)) + '" alt="' + esc(row.title || '') + '" width="1200" height="1200">' +
-        '<span class="card-cat">' + esc(cat) + '</span>' +
       '</a>' +
       '<div class="card-body">' +
+        '<span class="card-cat">' + esc(cat) + '</span>' +
         '<h3 class="card-title"><a href="#' + esc(row.slug) + '" data-open="' + esc(row.slug) + '">' + esc(row.title || '') + '</a></h3>' +
         '<p class="card-meta"><time datetime="' + esc(toDateInput(row.created_at)) + '">' + esc(dateTxt) + '</time> · 댓글 없음</p>' +
         '<p class="card-ex">' + esc(row.excerpt || '') + '</p>' +
